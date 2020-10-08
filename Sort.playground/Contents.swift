@@ -18,3 +18,9 @@ example(of: "insertion sort") {
   insertionSort(&array)
   print("Insertion sorted: \(array)")
 }
+
+example(of: "merge sort") {
+  let array = [7, 2, 6, 3, 9, 11, 13]
+  print("Original array: \(array)")
+  print("Merge sorted: \(mergeSort(array))")
+}
