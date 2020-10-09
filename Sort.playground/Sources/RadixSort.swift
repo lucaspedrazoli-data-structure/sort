@@ -13,14 +13,11 @@ extension Array where Element == Int {
         let remainingPart = number / digits
         let digit = remainingPart % base
         buckets[digit].append(number)
-        print("buckets \(buckets)")
         if remainingPart > 0 {
           done = false
         }
       }
       digits *= base
-      print("-------digits: \(digits)-------")
-      print("-------self::: \(self)")
       self = buckets.flatMap { $0 }
     }
   }
