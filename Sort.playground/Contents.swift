@@ -24,3 +24,10 @@ example(of: "merge sort") {
   print("Original array: \(array)")
   print("Merge sorted: \(mergeSort(array))")
 }
+
+example(of: "radix sort") {
+  var array = [88, 410, 1772, 20]
+  print("Original array: \(array)")
+  array.radixSort()
+  print("Radix sorted: \(array)")
+}
