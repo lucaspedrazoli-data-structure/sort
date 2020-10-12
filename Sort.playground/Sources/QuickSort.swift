@@ -54,4 +54,14 @@ public func partitionHoare<T: Comparable>(_ a: inout [T],
   }
 }
 
+public func quickSortHoare<T: Comparable>(_ a: inout [T],
+                                          low: Int,
+                                          high: Int) {
+  if low < high {
+    let p = partitionHoare(&a, low: low, high: high)
+    quickSortHoare(&a, low: low, high: p)
+    quickSortHoare(&a, low: p + 1, high: high)
+  }
+}
+
 
