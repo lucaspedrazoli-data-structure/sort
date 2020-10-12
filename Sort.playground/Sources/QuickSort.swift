@@ -25,3 +25,15 @@ public func partitionLomuto<T: Comparable>(_ a: inout [T],
   a.swapAt(i, high)
   return i
 }
+
+public func quickSortLomuto<T: Comparable>(_ a: inout [T],
+                                           low: Int,
+                                           high: Int) {
+  if low < high {
+    let pivot = partitionLomuto(&a, low: low, high: high)
+    quickSortLomuto(&a, low: low, high: pivot - 1)
+    quickSortLomuto(&a, low: pivot + 1, high: high)
+  }
+}
+
+

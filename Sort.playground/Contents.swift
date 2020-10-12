@@ -31,3 +31,16 @@ example(of: "radix sort") {
   array.radixSort()
   print("Radix sorted: \(array)")
 }
+
+example(of: "Quick Sort naive") {
+  let array = [7, 2, 6, 3, 9, 11, 13]
+  print("Original array: \(array)")
+  print("Quick sorted: \(quickSortNaive(array))")
+}
+
+example(of: "Quick sort lomuto") {
+  var list = [12, 0, 3, 9, 2, 21, 18, 27, 1, 5, 8, -1, 8]
+  print("Original array: \(list)")
+  quickSortLomuto(&list, low: 0, high: list.count - 1)
+  print("Lomuto sorted: \(list)")
+}
