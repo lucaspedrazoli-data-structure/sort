@@ -51,3 +51,10 @@ example(of: "Quick sort hoare") {
   quickSortHoare(&list, low: 0, high: list.count - 1)
   print("Hoare sorted: \(list)")
 }
+
+example(of: "Quick sort median") {
+  var list = [12, 0, 3, 9, 2, 21, 18, 27, 1, 5, 8, -1, 8]
+  print("Original array: \(list)")
+  quickSortMedian(&list, low: 0, high: list.count - 1)
+  print("Quick sorted: \(list)")
+}
