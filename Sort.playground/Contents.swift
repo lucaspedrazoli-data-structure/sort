@@ -58,3 +58,10 @@ example(of: "Quick sort median") {
   quickSortMedian(&list, low: 0, high: list.count - 1)
   print("Quick sorted: \(list)")
 }
+
+example(of: "Quick sort Dutch Flag") {
+  var list = [12, 0, 3, 9, 2, 21, 18, 27, 1, 5, 8, -1, 8]
+  print("Original array: \(list)")
+  quickSortDutchFlag(&list, low: 0, high: list.count - 1)
+  print("Dutch Flag sorted: \(list)")
+}
