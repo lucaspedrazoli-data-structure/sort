@@ -20,6 +20,7 @@ for end in array.indices.reversed() {
   if swapped == false { return }
 }
 ```
+*every time the bubble find a higher value out od order it will swap the positions*
 
 ## Selection sort
 #### Selection sort follows the basic idea of bubble sort, but improves upon this algorithm by reducing the number of swapAt operations. Selection sort will only swap at the end of each pass
@@ -36,3 +37,4 @@ for current in 0..<(array.count - 1) {
   }
 }
 ```
+*to reduce the swaps, the selection will do the swap operation only on the last index out of order in the iteration*
