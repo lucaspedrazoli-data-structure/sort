@@ -38,3 +38,17 @@ for current in 0..<(array.count - 1) {
 }
 ```
 *to reduce the swaps, the selection will do the swap operation only on the last index out of order in the iteration*
+
+## Insertion sort
+#### Is a more useful algorithm. The performance of insertion sort can vary. The more the data is already sorted, the less work it needs to do. Insertion sort has a best time complexity of O(n) if the data is already sorted.
+```
+for current in 1..<array.count {
+    for shifting in (1...current).reversed() {
+      if array[shifting] < array[shifting - 1] {
+        array.swapAt(shifting, shifting - 1)
+      } else {
+        break
+      }
+    }
+  }
+```
