@@ -30,10 +30,9 @@ for current in 0..<(array.count - 1) {
     if array[lowest] > array[other] {
       lowest = other
     }
-
-    if lowest != current {
-      array.swapAt(lowest, current)
-    }
+  }
+  if lowest != current {
+    array.swapAt(lowest, current)
   }
 }
 ```
