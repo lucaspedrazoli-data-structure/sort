@@ -52,3 +52,5 @@ for current in 1..<array.count {
     }
   }
 ```
+
+*It will do a reversed iteration and will only do a second iteration if the element is out of order*
