@@ -10,10 +10,13 @@
 
 ```
 for end in array.indices.reversed() {
+  var swapped = false
   for current in 0..<end {
     if array[current] > array[current + 1] {
       array.swapAt(current, current + 1)
+      swapped = true
     }
   }
+  if swapped == false { return }
 }
 ```
